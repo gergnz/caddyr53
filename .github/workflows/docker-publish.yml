@@ -13,6 +13,10 @@ on:
   # Run tests for any PRs.
   pull_request:
 
+  # build monthly for automatic patches
+  schedule:
+    - cron:  '37 15 1 * *'
+
 env:
   IMAGE_NAME: caddyr53
 
