@@ -6,3 +6,5 @@ RUN xcaddy build \
 FROM caddy
 
 COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+
+LABEL org.opencontainers.image.source https://github.com/gergnz/caddyr53
